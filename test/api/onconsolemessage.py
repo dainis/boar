@@ -6,7 +6,7 @@ import time
 import unittest
 
 # URL of SlimerJS / PhantomJS server
-url = os.environ['COMPATIPEDE_TAB_URL']
+url = os.getenv('COMPATIPEDE_TAB_URL', 'http://127.0.0.1:8778')
 
 def do_command(url, command, data={}):
     headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
