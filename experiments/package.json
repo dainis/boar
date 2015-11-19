@@ -1,0 +1,16 @@
+{
+  "title": "Firefox Remote",
+  "name": "ffr",
+  "version": "0.0.1",
+  "description": "Exposing a Restful API to control Firefox",
+  "main": "index.js",
+  "author": "Seif Lotfy",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "Apache",
+  "type": "privileged",
+  "permissions": {
+    "tcp-socket": {}
+  }
+}
